@@ -6,25 +6,9 @@ import TodoList from './components/TodoList';
 const todo = [
   {
     task: 'Finish Project',
-    id: 1,
+    id: Date.now(),
     completed: false
   },
-  {
-    task: 'Learn class components',
-    id: 2,
-    completed: false
-  },
-  {
-    task: 'Review material from today',
-    id: 3,
-    completed: false
-  },
-  {
-    task: 'Learn class components',
-    id: 4,
-    completed: false
-  },
-
 ]
 
 class App extends React.Component {
@@ -77,13 +61,13 @@ class App extends React.Component {
   }
 
 
-
-
   render() {
     return (
-      <div>
-        <h1>Todo-List App</h1>
-        <TodoForm handleTodoAdd={this.handleTodoAdd} />
+      <div className="App">
+        <div className="header">
+          <h1>Todo-List App</h1>
+          <TodoForm handleTodoAdd={this.handleTodoAdd} />
+        </div>
         <TodoList todo={this.state.todo} handleTodoToggle={this.handleTodoToggle} handleTodoCompleted={this.handleTodoCompleted} />
       </div>
     );
