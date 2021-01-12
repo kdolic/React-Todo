@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
 /*********************** Todo Toggled ************************* */
-  handleTodoToggle =(todoId) => {
+  handleTodoToggle = (todoId) => {
     this.setState({
       todo: this.state.todo.map(todo => {
         if(todo.id === todoId) {
