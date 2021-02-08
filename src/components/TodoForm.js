@@ -2,12 +2,9 @@ import React from "react";
 
 class TodoForm extends React.Component {
   // Constructor with state
-  constructor(){
-    super();
-    this.state = {
+  state = {
       inputValue: ''
     }
-  }
 
   handleTodoChange = e => {
     // update state with each keystroke

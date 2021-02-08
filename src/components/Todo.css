@@ -21,13 +21,13 @@ span {
 }
 
 .App {
-  background-color: rgb(252, 250, 230);
-  border-radius: 10px;
+  background-color: gray;
+  border-radius: 50px;
   font-family: sans-serif;
   text-align: center;
   padding: 100px 60px;
   max-width: 665px;
-  margin: 0 auto;
+  margin: 10rem auto;
 }
 
 .header {
@@ -35,14 +35,17 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+
 h1 {
   text-align: left;
+  color: white;
 }
 
 .shopping-list {
   width: 100%;
   margin: 0 auto;
 }
+
 .todo {
   background-color: #e64944;
   width: 45%;
@@ -52,14 +55,22 @@ h1 {
   cursor: pointer;
 }
 
-.task.completed {
+.completed {
   text-decoration: line-through;
+  color: red;
 }
+
+.task {
+  font-size: 1.5rem;
+  background-color: white;
+}
+
 form {
   width: 50%;
   display: flex;
   justify-content: flex-end;
 }
+
 form > input {
   background-color: #2d2d37;
   border: 0;
